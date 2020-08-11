@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/bd_logo.png">
 </head>
 <body>
-	
+
 
 	<div class="wraper">
 		<div class="w-top">
@@ -32,12 +32,12 @@
 	                            <option value="hsc">HSC/Alim/Equivalent</option>
 	                            <option value="jsc">JSC/JDC</option>
 	                            <option value="ssc">SSC/Dakhil</option>
-								<option value="ssc_voc">SSC(Vocational)</option>
+															<option value="ssc_voc">SSC(Vocational)</option>
 	                            <option value="hsc">HSC/Alim</option>
-								<option value="hsc_voc">HSC(Vocational)</option>
-								<option value="hsc_hbm">HSC(BM)</option>
-								<option value="hsc_dic">Diploma in Commerce</option>
-								<option value="hsc">Diploma in Business Studies</option>
+															<option value="hsc_voc">HSC(Vocational)</option>
+															<option value="hsc_hbm">HSC(BM)</option>
+															<option value="hsc_dic">Diploma in Commerce</option>
+															<option value="hsc">Diploma in Business Studies</option>
                           	</select>
 						</td>
 					</tr>
@@ -122,8 +122,8 @@
 		<img src="assets/images/play.png" alt="">
 	</div>
 
-	
 
-	
+
+
 </body>
 </html>
