@@ -17,7 +17,7 @@
                             <li> <a href="profile.html">Profile</a> </li>
 
                             <li class="divider"></li>
-                            <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li>
+                            <li> <a href="?logout=success" >Logout</a> </li>
                         </ul>
                     </div>
                 </div>
