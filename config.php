@@ -1,5 +1,6 @@
 <?php
 
+  session_start();
   // Server constant
   define('HOST', 'localhost');
   define('USER', 'root');
