@@ -25,18 +25,50 @@
     }
 
     // Data check
-    public function dataCheck($tbl , $data)
-    {
-      $stmt =  $this -> connection() -> prepare("SELECT * FROM $tbl WHERE email='$data' || uname='$data'");
-      $stmt -> execute();
-      $num = $stmt -> rowCount();
+    public function dataCheck($tbl, array $data, $condition = 'AND')
+  {
+    $query_string= '';
+    foreach( $data as $key => $val ){
 
-      return [
-        'num' => $num,
-        'data' => $stmt
-      ];
+      $query_string .=  $key . "='$val' $condition ";
+
 
     }
+
+    $query_array = explode(' ', $query_string);
+    array_pop($query_array);
+    array_pop($query_array);
+
+    $final_query_string =  implode(' ', $query_array);
+
+    $stmt = $this -> connection() -> prepare("SELECT * FROM $tbl WHERE $final_query_string");
+    $stmt -> execute();
+    $num = $stmt -> rowCount();
+
+    return [
+      'num'	=> $num,
+      'data'	=> $stmt,
+    ];
+
+
+
+  }
+
+  //Data create
+  public function create()
+  {
+    // code...
+  }
+  //Data find
+  public function find()
+  {
+    // code...
+  }
+  //Data delete  
+  public function delete()
+  {
+    // code...
+  }
 
     //Data update
     public function update($tbl, $id, array $data)
