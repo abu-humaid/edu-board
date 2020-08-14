@@ -13,7 +13,7 @@
                       <i class="on md b-black"></i> </span> <span class="hidden-nav-xs clear"> <span class="block m-t-xs"> <strong class="font-bold text-lt"><?php echo $_SESSION['name']; ?></strong> <b class="caret"></b> </span> <span class="text-muted text-xs block"><?php echo $_SESSION['cell']; ?></span> </span>
                   </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li> <span class="arrow top hidden-nav-xs"></span> <a href="#">Settings</a> </li>
+                            <li> <span class="arrow top hidden-nav-xs"></span> <a href="password_change.php">Change Password</a> </li>
                             <li> <a href="profile.html">Profile</a> </li>
 
                             <li class="divider"></li>
