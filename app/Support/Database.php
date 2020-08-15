@@ -64,8 +64,13 @@
   {
     // code...
   }
-  //Data delete  
+  //Data delete
   public function delete()
+  {
+    // code...
+  }
+  //Data show all 
+  public function all()
   {
     // code...
   }

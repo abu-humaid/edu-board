@@ -47,7 +47,7 @@
                             <a href="Dashboard.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Rsults</span> </a>
                         </li>
                         <li >
-                            <a href="Dashboard.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Rsults</span> </a>
+                            <a href="users.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Users</span> </a>
                         </li>
 
 
