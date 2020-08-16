@@ -36,15 +36,15 @@
                 <!-- nav -->
                 <nav class="nav-primary hidden-xs">
                     <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">Start</div>
-                    <ul class="nav nav-main" data-ride="collapse">
+                    <ul id="dash-menu" class="nav nav-main" data-ride="collapse">
                         <li class="active">
                             <a href="Dashboard.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Dashboard</span> </a>
                         </li>
                         <li >
-                            <a href="Dashboard.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Students</span> </a>
+                            <a href="students.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Students</span> </a>
                         </li>
                         <li >
-                            <a href="Dashboard.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Rsults</span> </a>
+                            <a href="results.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Rsults</span> </a>
                         </li>
                         <li >
                             <a href="users.php" class="auto"> <i class="i i-statistics icon"> </i> <span class="font-bold">Users</span> </a>

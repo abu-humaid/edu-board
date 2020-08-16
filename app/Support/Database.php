@@ -55,10 +55,41 @@
   }
 
   //Data create
-  public function create()
-  {
-    // code...
-  }
+  public function create($table, $data)
+		{
+
+
+			// Make SQL Column form data
+			$array_key = array_keys($data);
+			$array_col = implode(',', $array_key);
+
+			// make SQL values from data
+			$array_val = array_values($data);
+
+			foreach ($array_val as $value) {
+
+				$form_value[] = "'".$value."'";
+
+			}
+
+			$array_values = implode(',', $form_value);
+
+
+
+
+			// Data send to table
+			$sql = "INSERT INTO $table ($array_col) VALUES ($array_values)" ;
+			$stmt = $this -> connection() -> prepare($sql);
+			$stmt -> execute();
+
+			if ( $stmt ) {
+				return true;
+			}else {
+				return false;
+			}
+
+
+		}
   //Data find
   public function find()
   {
@@ -69,10 +100,13 @@
   {
     // code...
   }
-  //Data show all 
-  public function all()
+  //Data show all
+  public function all($tbl, $order = 'DESC')
   {
-    // code...
+    $sql = "SELECT * FROM $tbl ORDER BY id $order" ;
+    $stmt = $this -> connection() -> prepare($sql);
+    $stmt -> execute();
+    return $stmt;
   }
 
     //Data update
