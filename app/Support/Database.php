@@ -96,9 +96,13 @@
     // code...
   }
   //Data delete
-  public function delete()
+  public function delete($tbl, $id)
   {
-    // code...
+
+    $sql = "DELETE FROM $tbl WHERE id='$id' " ;
+    $stmt = $this -> connection() -> prepare($sql);
+    $stmt -> execute();
+    return true;
   }
   //Data show all
   public function all($tbl, $order = 'DESC')

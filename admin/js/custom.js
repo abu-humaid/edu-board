@@ -56,6 +56,54 @@
     }
     allUsers();
 
+    // Delete user account
+    $(document).on('click', 'a#delete_user', function(e){
+        e.preventDefault();
+
+        let del = confirm('Are you sure ? ');
+        let id = $(this).attr('user_id');
+
+        if ( del == true ) {
+
+            $.ajax({
+
+              url : 'Templates/ajax/user_delete.php',
+              method : "POST",
+              data : { id : id },
+              success : function(data){
+
+                    $('.mess').html(data);
+                    allUsers();
+
+              },
+
+
+            });
+
+        } else {
+          return false;
+        }
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

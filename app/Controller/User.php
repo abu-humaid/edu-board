@@ -48,6 +48,21 @@
       return $data;
     }
 
+    // Delete user
+    public function userDelete($id)
+    {
+      $data = $this -> delete( 'users', $id);
+
+      if ($data) {
+        return true;
+      }
+
+    }
+
+
+
+
+
   }
 
 
